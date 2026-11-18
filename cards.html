@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://doki.akshats.xyz/practice/dailyai/cards -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>단어장 연습</title>
+</head><body><h1>AI 단어장</h1>
+<p id="word" aria-live="polite">model</p>
+<button id="next">다음</button>
+<script>
+const cards = ['model', 'prompt'];
+let index = 0;
+document.getElementById('next').onclick = () => {
+  index = (index + 1) % cards.length;
+  document.getElementById('word').textContent = cards[index] ?? '카드를 찾을 수 없어';
+};
+</script>
+
+<script type="module" src="./cards_files/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;53c3a29115fe4a579ff0e74cc0c234f2&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+</body></html>
